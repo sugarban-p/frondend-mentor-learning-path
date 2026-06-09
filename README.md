@@ -19,3 +19,22 @@
 >     </td>
 >   </tr>
 > </table>
+
+
+> ### 02 - 部落格預覽卡片
+> **<a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS">>>題目說明</a>**
+> 
+> <table align="center">
+>   <tr>
+>     <th> PC </th>
+>     <th> mobile </th>
+>   </tr>
+>   <tr>
+>     <td>
+>       <img src="./02-blog-preview-card/design/desktop-design.jpg" width=490/>
+>     </td>
+>     <td>
+>       <img src="./02-blog-preview-card/design/mobile-design.jpg" width=150/>
+>     </td>
+>   </tr>
+> </table>
