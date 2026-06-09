@@ -8,8 +8,12 @@
 }
 
 body {
-  background-color: #D5E1EF;
+  background-color: #d5e1ef;
   position: relative;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -63,4 +67,29 @@ body {
   font-size: 15px;
   line-height: 1.4;
   letter-spacing: 0.2px;
+}
+
+footer {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  transform: translateY(-100%);
+}
+
+footer div {
+  display: flex;
+  width: fit-content;
+  background-color: #f7984b70;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 10px;
+  margin: auto;
+  gap:3px;
+}
+
+@media screen and (max-width: 767px) {
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
