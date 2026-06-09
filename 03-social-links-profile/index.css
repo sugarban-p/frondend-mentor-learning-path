@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --c-green: #c5f82a;
+  --c-grey-700: #333333;
+  --c-grey-800: #1f1f1f;
+  --c-grey-900: #141414;
+}
+
+body {
+  background-color: var(--c-grey-800);
+  position: relative;
+  background-image: url(./design/destkop-design.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  color: var(--c-gray-950);
+}
+
+.container {
+  width: 382px;
+  height: 520px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--c-gray-950);
+  box-shadow: 8px 8px #000000;
+  background-color: #fff;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.category > div {
+  width: fit-content;
+  padding: 4px 12px;
+  background-color: var(--c-yellow);
+  border-radius: 4px;
+}
+
+.category *,
+.author * {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.publish-date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.title:active {
+  color: var(--c-yellow);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--c-gray-500);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 12px;
+}
+
+.author img {
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  transform: translateY(-100%);
+}
+
+footer div {
+  display: flex;
+  width: fit-content;
+  background-color: #f7984b70;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 10px;
+  margin: auto;
+  gap: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
