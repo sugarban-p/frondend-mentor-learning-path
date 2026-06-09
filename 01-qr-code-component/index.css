@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: #D5E1EF;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  width: 320px;
+  height: 499px;
+  padding: 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qrcode {
+  width: 288px;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.qrcode img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-area {
+  width: 288px;
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-area * {
+  text-align: center;
+}
+
+.slogan {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.desc {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
